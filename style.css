@@ -1,0 +1,178 @@
+@import url("https://db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse+Bold");
+
+@font-face {
+  font-family: "Norse Bold";
+  src: url("https://db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root {
+    --background-width: 35vw
+}
+
+
+/*
+
+* {
+    outline: solid red;
+}
+
+*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+#background {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: var(--background-width);
+    background-image: url('https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#background > p {
+    color: white;
+    font-size: 12px;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: calc(100vw - var(--background-width));
+}
+
+#form-container > div {
+    display: flex;
+    height: 33.3333vh;
+}
+
+#statement {
+    align-items: center;
+    padding-left: 45px;
+    padding-right: 120px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: column;
+    height: 33.3333vh;
+    width: var(--background-width);
+    justify-content: flex-end;  
+}
+
+#logo-background {
+    display: flex;
+    height: 100px;
+    width: var(--background-width);
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+#logo {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 1;
+}
+
+#logo-text {
+    color: white;
+    font-family: "Norse Bold", sans-serif;
+    font-size: 84px;
+    opacity: 1;
+}
+
+#form > p {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+#form {
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+#take-action {
+    background-color: whitesmoke;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+#take-action > button {
+    margin-top: 50px;
+    width: 190px;
+    height: 35px;
+    border-radius: 6px;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+}
+
+form.submitted input:invalid {
+  border: 1px solid red;
+}
+
+
+span {
+    color: #596D48;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+input[type='text'], input[type='number'], input[type='email'] {
+    width: 200px;
+    margin-right: 35px;
+    height: 18px;
+    border: solid whitesmoke;
+    border-radius: 3px;
+    padding: 4px;
+    transition: 0.2s ease, border 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 6px 2px rgba(89, 109, 72, 0.4);
+  border: 1px solid blue;
+}
+
+#input-container {
+    display: flex;
+    gap: 21px;
+    width: 550px;
+    flex-wrap: wrap;
+}
